@@ -1,0 +1,379 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+	width: 100%;
+	display: block;
+}
+
+header .header-area {
+	padding: 15px 0;
+	background: #FFF;
+	border-bottom: 1px solid #eaeaea;
+}
+
+header .header-area .container {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: auto;
+}
+
+header .header-area .container .flex-items {
+	display: flex;
+	align-items: center;
+}
+
+header .header-area .container .flex-items .logo {
+	flex: 3;
+}
+
+header .header-area .container .flex-items .contact .flex-contact {
+	display: flex;
+	align-items: center;
+}
+
+header .header-area .container .flex-items .contact .flex-contact ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+header .header-area .container .flex-items .contact .flex-contact ul li {
+	display: inline-block;
+}
+
+header .header-area .container .flex-items .contact .flex-contact ul li a {
+	text-decoration: none;
+	color: #919191;
+	font-size: 13px;
+	margin-right: 45px;
+}
+
+header .header-area .container .flex-items .contact .flex-contact ul li a i {
+	color: #FF3414;
+    margin-right: 7px;
+}
+
+.contact .flex-contact .get-fress-quote {
+	display: block;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	border: 1px solid #FF3414;
+	padding: 15px 30px;
+	color: #FF3414;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.contact .flex-contact .get-fress-quote:hover {
+	background: #FF3414;
+	color: #FFF;
+	transition: 0.5s; 
+}
+
+/* MENU */
+
+nav {
+	padding: 10px 0px;
+	border: 1px solid #eaeaea;
+	line-height: 45px;
+}
+
+nav .container {
+	max-width: 1140px;
+	padding: 0px 15px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+nav .container .menu {
+	flex: 3;
+}
+
+nav .container .menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+nav .container .menu ul li {
+	display: inline-block;
+	position: relative;
+}
+
+nav .container .menu ul li a {
+	text-decoration: none;
+	font-size: 16px;
+	color: #596672;
+	font-weight: 400;
+	display: inline-block;
+	padding: 0px 60px 0px 0px;
+	font-family: "Poppins", sans-serif;
+}
+
+nav .container .menu ul li a .ti-angle-down {
+	font-size: 9px;
+	margin-left: 5px;
+}
+
+nav .container .menu ul li a:hover {
+	color: #FF3414;
+}
+
+nav .container .menu ul li ul.submenu {
+	position: absolute;
+	left: 0px;
+	top: 100%;
+	width: 250px;
+	background: #FFF;
+	text-align: left;
+	z-index: 1000;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.7s;
+}
+
+nav .container .menu ul li ul.submenu li {
+	display: block;
+}
+
+nav .container .menu ul li ul.submenu li a {
+	padding: 2px;
+	border-bottom: 1px solid #eaeaea;
+	display: block;
+	font-weight: 400;
+}
+
+nav .container .menu ul li:hover ul.submenu {
+	opacity: 1;
+	visibility: unset;
+}
+
+nav .container .search a {
+	width: 35px;
+	height: 35px;
+	background: #FF3414;
+	display: block;
+	border-radius: 50%;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	line-height: 35px;
+}
+
+/*Slide*/
+#slide {
+	height: 700px;
+	position: relative;
+}
+
+#slide:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: #001D38;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: .5;
+}
+
+#slide .slide-item {
+	width: 100%;
+	height: 700px;
+	background-image: url(../img/banner/banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+#slide .slide-item .slide-content {
+	max-width: 750px;
+	text-align: center;
+	position: relative;
+}
+
+#slide .slide-item .slide-content p {
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: "Poppins", sans-serif;
+}
+
+#slide .slide-item .slide-content h3 {
+	font-family: "Poppins", sans-serif;
+	font-size: 60px;
+	color: #FFF;
+	letter-spacing: 0;
+	font-weight: 600;
+	margin-bottom: 30px;
+	margin-top: 35px;
+}
+
+#slide .slide-item .slide-content .btn-service {
+	text-decoration: none;
+	background: #FF3414;
+	display: inline-block;
+	padding: 20px 40px;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	border: 1px solid #FF3414;
+}
+
+#slide .slide-item .slide-content .btn-service:hover {
+	background: transparent;
+	color: #FF3414;
+}
+
+/*About*/
+
+#about {
+	width: 100%;
+	padding: 100px 0px 100px 0px;
+}
+
+#about .container {
+	max-width: 1140px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#about .container ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+
+#about .container ul li {
+	min-width: 390px;
+}
+
+#about .container ul li img {
+	margin-bottom: 10px;
+}
+
+#about .container ul li h2 {
+	margin-bottom: 20px;
+}
+
+#about .container ul li h2:hover {
+	color: #FF3414;
+}
+
+#about .container ul li p {
+	font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #919191;
+    max-width: 300px;
+}
+
+/*Service*/
+
+#service {
+	background: #F5FBFF;
+    padding: 120px 0 90px 0;
+}
+
+#service .container {
+	max-width: 1140px;
+	margin: 0px auto;
+}
+
+#service .container h2 {
+	font-size: 46px;
+    font-weight: 400;
+    line-height: 52px;
+    color: #001D38;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#service .container .service-slider {
+	width: 100%;
+	position: relative;
+}
+
+#service .container .service-slider a.control {
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: #FFF;
+	text-align: center;
+	color: #FF3414;
+	border-radius: 50%;
+	line-height: 40px;
+	text-decoration: none;
+	position: absolute;
+}
+
+#service .container .service-slider a.prev {
+	left: -15px;
+    bottom: 145px;
+}
+
+#service .container .service-slider a.next {
+	right: 30px;
+    bottom: 145px;
+}
+
+#service .container .service-slider a.control:hover {
+	background: #FF3414;
+	color: #FFF;
+}
+
+#service .container ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+
+
+#service .container ul li {
+	max-width: 350px;
+	width: 100%;
+	margin-right: 45px;
+}
+
+#service .container ul li img {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+#service .container ul li h3 a {
+ 	color: #001D38;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+}
+
+#service .container ul li h3 a:hover {
+	text-decoration: underline;
+	color: #FF3414;
+}
+
+#service .container ul li p
+{
+	font-size: 16px;
+    font-weight: 400;
+    color: #919191;
+    margin-bottom: 0;
+}
